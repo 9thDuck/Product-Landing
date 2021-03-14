@@ -1,0 +1,42 @@
+animation-name: header-image;
+  animation-iteration-count: infinite;
+  animation-duration: 790ms;
+  transition-property: all;
+  transition-timing-function: linear;
+}
+
+@keyframes header-image {
+  0% {
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmundoconectado.com.br%2Fuploads%2Fchamadas%2Fnvidia-rtx-3000-lancamento-oficial-mc-0.jpg&f=1&nofb=1);
+  }
+
+  20% {
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.notebookcheck.net%2Ffileadmin%2FNotebooks%2FNews%2F_nc3%2Fgeforce_rtx_3090_hero_background_image_spec2_bb770_550_d.jpg&f=1&nofb=1);
+  }
+
+  40% {
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.sZ5eQHHcFIeAHUqbQei9agHaEK%26pid%3DApi&f=1);
+  }
+
+  50% {
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.i1rHqR7MEIcxLY2lDq6usgHaEK%26pid%3DApi&f=1);
+  }
+
+  60% {
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.wccftech.com%2Fwp-content%2Fuploads%2F2019%2F06%2FASUS-ROG-STRIX-Graphics-Cards.jpg&f=1&nofb=1);
+  }
+
+  70% {
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.KxK1Tz1LgL_Nwt8EH2x7fAHaEK%26pid%3DApi&f=1);
+  }
+
+  80% {
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.SQ1crrIlAfMD4XQAARscsQHaEK%26pid%3DApi&f=1);
+  }
+
+  90% {
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ficdn3.digitaltrends.com%2Fimage%2Fdigitaltrends%2Fnvidia-rtx-2060-super-2070-super-review-04252-1200x630-c-ar1.91.jpg&f=1&nofb=1);
+  }
+
+  100% {
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.Ey343jwaVcYXmRS5l3GVvAHaFj%26pid%3DApi&f=1);

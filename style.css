@@ -1,0 +1,203 @@
+:root {
+  /*////////////////////////////////////////////////////
+                        COLORS
+/////////////////////////////////////////////////////*/
+
+  --c1: #000;
+  --c2: #fff;
+  --c3: #c20114;
+  --c4: #6d7275;
+  --c5: #c7f6d5;
+  --c6: #ecebf3;
+  --c7: #0c120c;
+
+  /*////////////////////////////////////////////////////
+                        FONTS
+/////////////////////////////////////////////////////*/
+
+  --f1: "Crimson Text", serif, sans-serif;
+  --f2: "Orbitron", sans-serif;
+  --f3: "Bangers", cursive, sans-serif;
+  --f4: "Redressed", cursive, sans-serif;
+  font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: var(--f1);
+  color: var(--c4);
+  font-size: 1.125rem;
+}
+
+body {
+  background-color: var(--c2);
+  margin: 0;
+  color: var(--c1);
+}
+
+/*////////////////////////////////////////////////////
+                      HEADER
+/////////////////////////////////////////////////////*/
+
+#header {
+  height: 100%;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.79);
+}
+
+#logo {
+  display: flex;
+  align-items: baseline;
+}
+
+/*////////////////////////////////////////////////////
+                     NAVIGATION
+/////////////////////////////////////////////////////*/
+
+nav a {
+  color: var(--c2);
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 1rem;
+  list-style: none;
+}
+
+nav a:focus,
+nav a:hover {
+  color: var(--c5);
+  text-decoration: underline;
+  text-shadow: var(--c2);
+  border-radius: 2px;
+  background-color: rgba(175, 175, 175, 0.486);
+  box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(245, 6, 6, 0),
+    0.1rem 0.1rem 0.1rem 0.1rem rgb(255, 0, 255);
+}
+
+/*////////////////////////////////////////////////////
+                    HOMEPAGE STYLING
+/////////////////////////////////////////////////////*/
+
+h1 a {
+  font-family: var(--f2);
+  text-decoration: none;
+  color: var(--c3);
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+h2,
+h3 {
+  line-height: 2rem;
+  font-family: var(--f2);
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+#aboutus {
+  background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.notebookcheck.net%2Ffileadmin%2FNotebooks%2FNews%2F_nc3%2Fgeforce_rtx_3090_hero_background_image_spec2_bb770_550_d.jpg&f=1&nofb=1);
+  max-width: 100%;
+  color: var(--c2);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.79);
+  background-blend-mode: multiply;
+  padding: 9vh 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+section p {
+  text-indent: 1rem;
+  text-align: start;
+  padding-bottom: 1.1rem;
+}
+
+.fh2 {
+  text-align: center;
+  color: rgba(37, 250, 37, 0.699);
+}
+
+.fh3 {
+  color: rgba(247, 44, 44, 0.669);
+}
+
+.get-in-touch {
+  text-align: center;
+}
+
+#form {
+  text-align: center;
+}
+
+#email {
+  box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.575);
+  margin: 0.5rem;
+}
+
+button {
+  background-color: rgb(94, 94, 219);
+  color: var(--c2);
+  border-style: ridge;
+  border-color: slategray;
+  padding: 0 1rem 0 1rem;
+  border-radius: 1rem;
+  box-shadow: 0.15rem 0.15rem 0.15rem 0.15rem rgba(0, 0, 0, 0.575);
+}
+
+.follow-us {
+  text-align: center;
+}
+
+.follow {
+  text-decoration: none;
+  padding: 0.4rem 0.8rem 0.4rem 0.8rem;
+  color: var(--c2);
+  background-color: rgba(75, 142, 243, 0.877);
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(112, 128, 144);
+  border-radius: 1rem;
+  margin: 1rem;
+  box-shadow: 0.15rem 0.15rem 0.15rem 0.15rem rgba(0, 0, 0, 0.575);
+}
+
+.follow:hover {
+  color: var(--c5);
+  text-decoration: underline;
+  text-shadow: var(--c2);
+  border-radius: 2px;
+  background-color: rgba(175, 175, 175, 0.486);
+  box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(245, 6, 6, 0),
+    0.1rem 0.1rem 0.1rem 0.1rem rgb(255, 0, 255);
+}
