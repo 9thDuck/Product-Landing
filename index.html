@@ -14,6 +14,7 @@
 </head>
 
 <body>
+  <div id="head"></div>
   <header id="header">
 
     <div id="logo">
@@ -26,10 +27,10 @@
 
       <ul>
 
-        <li><a href="">Home</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Contact</a></li>
-        <li><a href="">Products</a></li>
+        <li><a href="#header" class="nav-link">Home</a></li>
+        <li><a href="#aboutus" class="nav-link">About</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#b-s-p-h"class="nav-link">Products</a></li>
 
       </ul>
 
@@ -37,13 +38,21 @@
   </header>
 
   <main>
-    <section class="about" id="aboutus">
-      <h2 class="fh2">About us</h2>
+    <div class="hero1">
+      <h1>NO MORE SCALPER PRICES!</h1>
+    </div>
+
+
+    
+    
+    
+    <section  id="aboutus">
+      <div id="aboutuscont"><h2 class="fh2">About us</h2>
       <p class="aboutp1">
         We are focused on providing GPUs at non-scalper prices. We acquire inventory directly from OEMs.
         So you can count on us to provide you with the lowest prices out there even in times of pandemic. Our goal is to
-        supply the DIY PC arena and not the miners. Currently we ship throughout India free of cost.
-      </p>
+        supply the DIY PC arena and not the miners. Currently we ship throughout India, free of charge.
+      </p></div>
 
       <div class="features">
         <h2 class="fh2">Why choose us?</h2>
@@ -58,7 +67,7 @@
         <div class="fp2">
           <h3 class="fh3">Fast Shipping</h3>
           <p class="fp2">GPU Store orders will be delivered within 3 days all over India with the quality of service you
-            have come to expect from Red-Dart, with its industry leading logistics.</p>
+            have come to expect from our logistics partner Red-Dart, with its industry leading logistics.</p>
         </div>
 
         <div class="fp3">
@@ -75,7 +84,7 @@
     </section>
 
 
-    <section class="contact">
+    <section id="contact">
       <h2 class="get-in-touch">Get in Touch</h2>
 
       <form action="https://www.freecodecamp.com/email-submit" id="form">
@@ -90,26 +99,27 @@
 
       <div class="follow-us">
         <h3 class="follow-us">Follow us</h3>
-        <a href="#" class="follow">Facebook</a>
+        <div id="followgroup"><a href="#" class="follow">Facebook</a>
         <a href="#" class="follow">Instagram</a>
         <a href="#" class="follow">Twitter</a>
-        <a href="#" class="follow">Disord</a>
+        <a href="#" class="follow">Discord</a>
+      </div>
       </div>
 
     
 
-    <section class="products">
+    <section id="products-sec">
 
-      <h3 class="products">Our Best-Selling products</h3>
+      <h3 id="b-s-p-h">Our Best-Selling products</h3> 
 
-      <div class="products 3060ti">
+      <div class="products p3060ti">
         <img
           src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.MjhwE7_TqyQmHpXhyhBqOAHaEs%26pid%3DApi&f=1"
           alt="image of rtx 3060Ti" class="3060Ti pimg">
         <h4 class="3060ti pbtn"><a href="#">RTX 3060Ti</a></h4>
       </div>
 
-      <div class="products 3070">
+      <div class="products p3070">
         <img
           src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.0vuCmRuh_n0RAaEMrFtjKgHaEK%26pid%3DApi&f=1"
           alt="image of 3070" class="3070 pimg">
@@ -117,7 +127,7 @@
 
       </div>
 
-      <div class="products 3080">
+      <div class="products p3080">
         <img
           src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.WPD4BINaqUykXZcJnBcoVwHaEK%26pid%3DApi&f=1"
           alt="image of 3080" class="3080 pimg">
@@ -125,17 +135,23 @@
 
       </div>
 
-      <h3 class="products"><a href="#">All Products</a></h3>
+      
 
     </section>
-
+    <h3 class="allproducts"><a href="#">All Products</a></h3>
+    <div class="news">
+    <iframe width="0" height="0" src="https://www.youtube.com/embed/TD6-Y2a1XbE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video">Recommended Hardware News</iframe> </div>
 
 
   </main>
 
 
 
-
+<footer>
+  <a href="#head" id="jump">Jump to Top</a>
+  <h5>Copyright 2021 by Ipsum Lorem. All Rights Reserved.</h5>
+</footer>
 </body>
+
 
 </html>

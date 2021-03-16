@@ -31,12 +31,11 @@
 html {
   box-sizing: border-box;
   font-family: var(--f1);
-  color: var(--c4);
   font-size: 1.125rem;
 }
 
 body {
-  background-color: var(--c2);
+  background-color: var(--c6);
   margin: 0;
   color: var(--c1);
 }
@@ -49,29 +48,49 @@ body {
   height: 100%;
   background-size: cover;
   background-blend-mode: multiply;
-  background-color: rgba(0, 0, 0, 0.79);
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  width: 100%;
+  height: 5rem;
+  box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.575);
+}
+
+#header-img {
+  width: 50px;
+  height: 32px;
 }
 
 #logo {
+  padding-left: 0.5rem;
   display: flex;
   align-items: baseline;
+  background-color: rgba(36, 35, 35, 0.747);
 }
 
 /*////////////////////////////////////////////////////
                      NAVIGATION
 /////////////////////////////////////////////////////*/
 
+#nav-bar {
+  background-color: black;
+  position: fixed;
+  width: 100%;
+}
+
 nav a {
   color: var(--c2);
   text-decoration: none;
   font-size: 1.1rem;
+  display: inline-block;
 }
 
 nav ul {
-  display: flex;
-  justify-content: space-around;
-  padding-bottom: 1rem;
+  margin: 0;
+  padding: 0;
   list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 nav a:focus,
@@ -79,15 +98,35 @@ nav a:hover {
   color: var(--c5);
   text-decoration: underline;
   text-shadow: var(--c2);
-  border-radius: 2px;
-  background-color: rgba(175, 175, 175, 0.486);
+  border-radius: 0.5rem;
+  background-color: rgb(72, 83, 89);
   box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(245, 6, 6, 0),
-    0.1rem 0.1rem 0.1rem 0.1rem rgb(255, 0, 255);
+    0.1rem 0.1rem 0.1rem 0.1rem rgb(255, 0, 0);
+  transition-duration: 300ms;
+  transform: translatey(-0.2rem);
 }
 
 /*////////////////////////////////////////////////////
                     HOMEPAGE STYLING
 /////////////////////////////////////////////////////*/
+
+.hero1 h1 {
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 20vh 2rem;
+  font-family: var(--f2);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.453),
+    rgba(112, 128, 144, 0.59),
+    white,
+    white,
+    rgba(112, 128, 144, 0.575),
+    rgba(0, 0, 0, 0.453)
+  );
+  text-decoration-style: var(--c3);
+  color: var(--c1);
+}
 
 h1 a {
   font-family: var(--f2);
@@ -130,23 +169,27 @@ img {
   background-position: center;
   background-color: rgba(0, 0, 0, 0.79);
   background-blend-mode: multiply;
-  padding: 9vh 1rem;
+  padding: 10vh 1rem;
   display: flex;
   flex-direction: column;
 }
 
 section p {
   text-indent: 1rem;
-  text-align: start;
   padding-bottom: 1.1rem;
 }
 
-.fh2 {
-  text-align: center;
+section h2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   color: rgba(37, 250, 37, 0.699);
 }
 
 .fh3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   color: rgba(247, 44, 44, 0.669);
 }
 
@@ -163,7 +206,8 @@ section p {
   margin: 0.5rem;
 }
 
-button {
+button,
+#jump {
   background-color: rgb(94, 94, 219);
   color: var(--c2);
   border-style: ridge;
@@ -171,9 +215,21 @@ button {
   padding: 0 1rem 0 1rem;
   border-radius: 1rem;
   box-shadow: 0.15rem 0.15rem 0.15rem 0.15rem rgba(0, 0, 0, 0.575);
+  text-decoration: none;
+}
+
+button:hover,
+#jump:hover,
+button:focus,
+#jump:focus {
+  transition-duration: 300ms;
+  transform: translatey(-0.5rem);
 }
 
 .follow-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
 }
 
@@ -184,6 +240,7 @@ button {
   background-color: rgba(75, 142, 243, 0.877);
   display: flex;
   flex-direction: column;
+  text-align: center;
   border-style: solid;
   border-width: 1px;
   border-color: rgb(112, 128, 144);
@@ -192,12 +249,230 @@ button {
   box-shadow: 0.15rem 0.15rem 0.15rem 0.15rem rgba(0, 0, 0, 0.575);
 }
 
-.follow:hover {
-  color: var(--c5);
+.follow:hover,
+.allproducts:hover {
+  color: rgb(0, 238, 255);
   text-decoration: underline;
   text-shadow: var(--c2);
-  border-radius: 2px;
-  background-color: rgba(175, 175, 175, 0.486);
+  border-style: groove;
+  border-width: 1px;
+  border-color: rgb(112, 128, 144);
+  transition-duration: 300ms;
+  transform-style: ease all;
+  transition-property: background color;
+  transform: translatey(-0.4rem);
+  border-radius: 1rem;
+  background-color: rgb(56, 56, 56);
   box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(245, 6, 6, 0),
-    0.1rem 0.1rem 0.1rem 0.1rem rgb(255, 0, 255);
+    0.1rem 0.1rem 0.1rem 0.1rem rgb(0, 238, 255);
+}
+
+#contact {
+  padding: 5vh 0;
+}
+
+#products-sec {
+  padding: 2rem 0;
+  background-color: rgba(61, 104, 182, 0.549);
+}
+
+#b-s-p-h {
+  text-align: center;
+}
+
+.products img {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+  box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.575);
+  margin-top: 1.5rem;
+}
+
+.pbtn a {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  color: rgb(52, 79, 146);
+  border: 2px solid slategray;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  background-color: rgb(176, 255, 58);
+  box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.575);
+}
+
+.pbtn a:hover,
+.pbtn a:focus {
+  transition-duration: 500ms;
+  transform-style: ease in;
+  transition-property: background color;
+  transform: translatey(-0.4rem);
+  border-radius: 1rem;
+  color: rgb(64, 255, 0);
+  background-color: rgb(47, 51, 42);
+  box-shadow: 0.18rem 0.18rem 0.18rem 0.18rem rgba(31, 24, 24, 0.289),
+    0.15rem 0.15rem 0.15rem 0.15rem rgb(0, 255, 21);
+}
+
+.products h4 {
+  text-align: center;
+}
+
+.allproducts a {
+  text-decoration: none;
+  color: white;
+}
+.allproducts {
+  text-align: center;
+  margin: 2rem 3rem;
+  padding: 0.4rem 0.8rem 0.4rem 0.8rem;
+  color: var(--c2);
+  background-color: rgba(75, 142, 243, 0.877);
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(112, 128, 144);
+  border-radius: 1rem;
+  box-shadow: 0.15rem 0.15rem 0.15rem 0.15rem rgba(0, 0, 0, 0.575);
+}
+
+footer {
+  text-align: center;
+  background-color: rgb(209, 209, 209);
+  padding: 2rem 1rem;
+}
+
+@media (min-width: 760px) {
+  nav ul {
+    padding: 1vw;
+    justify-content: flex-end;
+  }
+  nav li {
+    padding: 0 2vw;
+  }
+  .hero1 h1 {
+    padding: 33vh;
+    font-size: 2.5em;
+  }
+
+  #aboutuscont,
+  .features {
+    margin: auto;
+    max-width: 60vw;
+  }
+  #aboutus h2 {
+    margin: 5vw 0;
+  }
+  .fp1,
+  .fp3 {
+    display: flex;
+    flex-direction: row;
+    column-gap: 13vw;
+    margin-top: 3rem;
+  }
+  .fp1 h3,
+  .fp3 h3 {
+    margin-left: 6vw;
+    align-items: center;
+    line-height: 2.4vw;
+  }
+
+  .fp2 h3 {
+    margin-right: 6vw;
+    align-items: center;
+    line-height: 2.4vw;
+  }
+  #products-sec img {
+    background-color: black;
+    object-fit: contain;
+    height: 14vw;
+    max-width: 24vw;
+    transform: scale(0.9);
+  }
+  #products-sec img,
+  #products-sec h4 {
+    margin-right: 2vw;
+  }
+
+  #products-sec h3 {
+    font-size: 2vw;
+    line-height: 2.5vw;
+  }
+
+  .fp2 {
+    display: flex;
+    flex-direction: row-reverse;
+    column-gap: 13vw;
+    margin-top: 3rem;
+  }
+
+  .fh2 {
+    margin-bottom: 1vw;
+    font-size: 3vw;
+  }
+
+  #aboutus h3 {
+    font-size: 2.3vw;
+  }
+  #aboutus p {
+    font-size: max(1.2vw, 1.15rem);
+    letter-spacing: 0.05vw;
+    word-spacing: 0.1vw;
+  }
+
+  #contact h2 {
+    font-size: 2vw;
+  }
+  .follow-us h3 {
+    font-size: 1.9vw;
+  }
+
+  .follow-us {
+    width: 60vw;
+    margin: auto;
+  }
+
+  #email {
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+  }
+
+  #followgroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 3rem;
+  }
+
+  #products-sec h3 {
+    margin: auto;
+  }
+
+  #products-sec {
+    display: flex;
+  }
+  .allproducts {
+    width: 20vw;
+    margin: 3vw auto;
+    padding: 0.5vw 0vw;
+  }
+}
+
+@media (max-height: 400px) {
+  .hero1 h1 {
+    padding: 19.1vw;
+  }
+
+  #products-sec {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #products-sec img {
+    margin: 2rem auto;
+  }
+  #followgroup {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 1rem;
+  }
 }
